@@ -1,0 +1,5 @@
+#!/bin/bash
+
+/opt/zato/current/code/bin/zato from-config /opt/zato/configs/zato_server1.config
+/opt/zato/current/code/bin/zato from-config /opt/zato/configs/zato_server2.config
+

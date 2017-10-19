@@ -1,0 +1,2 @@
+#!/bin/bash
+/opt/zato/current/code/bin/zato from-config /opt/zato/configs/zato_load_balancer.config
