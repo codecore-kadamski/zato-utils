@@ -37,6 +37,8 @@ After all your components have installed and are up and running. You need to kee
 
 Login to the web admin interface and head over to the `clusters` view. Once there, both your load balancers should report offline. Edit the blue cluster and replace the IP with the ip of the instance. Do the same with the green cluster. Now the clusters should be online and reporting everything fine. Go to each cluster and click `servers` and add the appropriate servers to each cluster. Once done, zato will tell you that `all servers are down`. Go to the `load-balancer` config in the webadmin for each cluster and update the ports of the servers (server1 is 17011, server2 is 17012). After this you should have a perfectly deployed zato environment that is ready for blue-green releases.
 
+The nice part of this is that services in your green env are completly isolated from your blue env.
+
 ### How to use this in production.
 So assuming you have deployed all of these instances in production and your environment is all set up the way to get blue green deployments down is super easy!
 
